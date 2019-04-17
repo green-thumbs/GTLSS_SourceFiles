@@ -1,0 +1,69 @@
+#wrapper{
+    font-family: tahoma;
+    font-size:16px;
+}
+
+.container{
+    width:95%;
+    margin:0 auto;
+}
+#subheader{
+    width:100%;
+    height:40px;
+    background-color: green;
+    color: #fff;
+    margin-top:15px;    
+}
+#subheader p{
+    float:left;
+    margin-top:7px;
+    
+    
+}
+#subheader a{
+    float:right;
+    line-height:30px;
+    color:white;
+    text-decoration:none;
+    margin-left:30px;
+    
+}
+/*logo sytling*/
+#mainheader{
+    width:100%;
+    height:100px;
+    background-color: lightgreen;
+    float:left;
+    margin-top:-5px;
+    height:175px;
+}
+#logo img{
+    width:250px;
+    margin-top:10px;
+    float:left;
+    margin-left:5px;
+}
+/*usermenu styling*/
+#usermenu{
+    width:300px;
+    float:right;
+    margin-top:60px;
+    
+}
+#usermenu li{
+    float:left;
+    text-align:center;
+    width:140px;
+    list-style:none;
+    font-size:25px;
+    border-left:1px solid black;  
+    
+}
+#usermenu li:hover{
+    font-size:30px;
+    transition:all .5s;
+}
+#usermenu li a{
+    color:white;
+    text-decoration:none;
+}
