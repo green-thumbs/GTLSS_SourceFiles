@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <title>Green Thumb Lawn Service</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    
+ <script src="app.js"></script>
+            
+        <body>
+            <div id="wrapper">
+                <div id="header">
+                    <div id="subheader">
+                        <div class="container">
+                            <p>All your services and supplies for a beautiful lawn</P>
+                            <a href="#">Help</a><a href="#">Employee Login</a><a href="#">Guest Login</a>
+                        </div>
+                    </div>
+                    <!==main==header>
+                    <div id="mainheader">
+                        <div id="logo">
+                            <img src="logo.png" alt="logo image">
+                        </div>
+                        <div id="usermenu">
+                            <li><a href="#">Cart</a></li>
+                            <li> <a href="#">AdminLogin</a></li>
+                        </div>
+                    </div>
+                </div>
+                <!=====navigation bar====>
+                <div id="navigation">
+                    
+                        <a href="index.html">Home</a>
+                        <a href="services.html">Services</a>
+                        <a href="landscapingsupplies.html">Landscaping Supplies</a>
+                        <a href="landscapingtips.html">Landscaping Tips</a>
+                        <a href="aboutus.html">About Us</a>
+                        <a href="contact.html">Contact</a>
+                </div>
+                <!=====homeslider=====>
+                <div class="carousel-container">
+                    <i class="fas fa-arrow-right" id="nexbtn"></i>
+                    <i class="fas fa-arrow-left" id="prevbtn"></i>
+                    <div class="carousel-slide">
+                        <img src="pic3.jpg" id="lastclone" alt="lawnpicback">
+                        <img src="pic2.jpg" alt="lawnpic1">
+                        <img src="pic3.jpg" alt="lawnpic2">
+                        <img src="pic2.jpg" id="firstclone" alt="lawnpic1">
+                                                  
+                </div>
+                    
+                    </div>
+                <div id="container-content">
+                    <h2>Add more content</h2>
+                </div>
+            </div>
+                   
+               
+                <script type="text/javascript" >
+                    const carouselSlide=document. querySelector('.carousel-slide');
+const carouselImages=document.querySelectorAll('.carousel-slide img')
+
+//buttons
+const prevbtn= document.querySelector('#prevbtn');
+const nexbtn= document.querySelector('#nexbtn');
+//counter
+let counter=1;
+const size= carouselImages[0].clientWidth;
+carouselSlide.style.transform='translateX('+(-size*counter)+'px)';
+//event listern
+nexbtn.addEventListener('click',() =>{
+    if(counter>=carouselImages.length-1)return;
+    carouselSlide.style.transition="transform().4s ease-in-out";
+    counter++;
+    carouselSlide.style.transform='translateX('+(-size*counter)+'px)';
+    
+});
+prevbtn.addEventListener('click',() =>{
+     if(counter <=0)return;
+    carouselSlide.style.transition="transform().4s ease-in-out";
+    counter--;
+    carouselSlide.style.transform='translateX('+(-size*counter)+'px)';
+    
+});
+carouselSlide.addEventListener('transitionend',()=>{
+              if (carouselImages[counter].id === 'lastclone'){
+        carouselSlide.style.transition="none";
+       counter=carouselImages.length - 2;
+         carouselSlide.style.transform = 'translateX('+(-size*counter)+'px)';
+    }
+     if (carouselImages[counter].id === 'firstclone'){
+        carouselSlide.style.transition="none";
+       counter=carouselImages.length - counter;
+         carouselSlide.style.transform = 'translateX('+(-size*counter)+'px)';
+    }
+});
+                    
+</script>
+  <br>
+      <br>
+      <br>
+      <div id="footer">
+          <h5>Copyright © 2019 Green Thumb Lawn Service Software</h5>
+          <a href="mailto:greenthumblawn23@gmail.com" style="bottom:-80px;">Email to greenthumblawn23@gmail.com</a>
+      </div>
+      <a href="#top" style="color:black; margin-left:80%; bottom:-100px">Back to top of page</a>
+              
+</body>
+</html>
