@@ -67,3 +67,116 @@
     color:white;
     text-decoration:none;
 }
+
+/*navigation bar styling*/
+#navigation{
+    width:100%;
+    height:40px;
+    background-color: green;
+    float:left;
+    box-shadow:10px 14px 50px 2px white;
+    }
+#navigation a{
+    width:1280px;
+    margin:0 auto;
+    margin-left:50px;    
+     color:white;
+     text-decoration:none;     
+     font-size:18px;
+     margin-bottom:5px;             
+ }
+ #navigation a:hover{
+     color:black;
+     transition: all 7ease;
+ }
+ /*===slider*/
+ .carousel-container{
+     width:50%;
+     max-width:100%;
+     margin-left:350px;
+     border:5px solid black;
+     overflow:hidden;
+     position:relative;
+     
+ }
+ .carousel-slide{
+     display:flex;
+     width:100%;
+     height:500px;
+ }
+ #prevbtn{
+     position:absolute;
+     top:50%;
+     z-index:10;
+     left:5%;
+     font-size:30px;
+     color:white;     
+     cursor:pointer;     
+ }
+ #nexbtn{
+     position:absolute;
+     top:50%;
+     z-index:10;
+     right:5%;
+     font-size:30px;
+     color:white;    
+     cursor:pointer;     
+ }
+ /*Add content*/
+ #content-container{
+    width:100%;
+    height:500px;
+    background-color: white;
+    color: black;
+    margin-top:15px;    
+}
+#content-container h5{
+    font-size:20px;
+    color:black;
+}
+/*footer*/
+ #footer{
+    width:100%;
+    height:60px;
+    background-color: green;
+    float:left;
+    text-align:center;
+    box-shadow:10px 14px 50px 2px white;
+    }
+#footer a{       
+    text-align:center;
+    color:white;
+     text-decoration:none;     
+     font-size:18px;                    
+ }
+ #footer h5{
+     font-size:16px;
+     Text-align:center;
+     line-height:0px;
+     margin-top:10px;
+     color:white;     
+ }
+ #footer a:hover{
+     color:black;
+     transition: all 7ease;
+ }
+ /*services*/
+ #services{
+    width:1000px;
+    display:table;
+    margin:auto;
+}
+#services ul{
+    width:100%;
+    margin-top:20px; 
+    text-decoration:none;    
+}
+#services ul li{
+    width: 33%;
+    float:left;
+    padding:0px;
+    margin:0px;
+    text-decoration:none;
+    color:blue;
+    
+}
